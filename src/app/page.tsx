@@ -197,7 +197,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src={`${BASE_PATH}/docs/screenshots/page-2025-12-16T19-30-01-878Z.png`}
+            src={`${BASE_PATH}/docs/screenshots/admin-01-dashboard.png`}
             alt="Admin Dashboard"
             width={1200}
             height={675}
