@@ -15,6 +15,8 @@ import {
   X
 } from 'lucide-react'
 
+const BASE_PATH = '/Yardr-Doc'
+
 type Section = 'overview' | 'admin' | 'company' | 'customer'
 
 const sections = [
@@ -34,7 +36,7 @@ export default function DocumentationPage() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-16 items-center px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2 mr-6">
-            <Image src="/yardrlogo.svg" alt="YARDR" width={32} height={32} />
+            <Image src={`${BASE_PATH}/yardrlogo.svg`} alt="YARDR" width={32} height={32} />
             <span className="font-bold text-lg">YARDR Docs</span>
           </Link>
           <button
@@ -123,7 +125,7 @@ function OverviewSection() {
 
       <div className="rounded-lg overflow-hidden border border-border">
         <Image
-          src="/docs/screenshots/landing-page.png"
+          src={`${BASE_PATH}/docs/screenshots/landing-page.png`}
           alt="YARDR Landing Page"
           width={1200}
           height={675}
@@ -195,7 +197,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/page-2025-12-16T19-30-01-878Z.png"
+            src={`${BASE_PATH}/docs/screenshots/page-2025-12-16T19-30-01-878Z.png`}
             alt="Admin Dashboard"
             width={1200}
             height={675}
@@ -211,7 +213,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-02-orders.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-02-orders.png`}
             alt="Admin Orders"
             width={1200}
             height={675}
@@ -227,7 +229,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-03-companies.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-03-companies.png`}
             alt="Admin Company Approvals"
             width={1200}
             height={675}
@@ -243,7 +245,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-04-listings.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-04-listings.png`}
             alt="Admin Listings"
             width={1200}
             height={675}
@@ -259,7 +261,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-05-categories.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-05-categories.png`}
             alt="Admin Categories"
             width={1200}
             height={675}
@@ -275,7 +277,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-06-service-types.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-06-service-types.png`}
             alt="Admin Service Types"
             width={1200}
             height={675}
@@ -291,7 +293,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-07-users-companies.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-07-users-companies.png`}
             alt="Admin Users - Companies"
             width={1200}
             height={675}
@@ -307,7 +309,7 @@ function AdminSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/admin-08-users-customers.png"
+            src={`${BASE_PATH}/docs/screenshots/admin-08-users-customers.png`}
             alt="Admin Users - Customers"
             width={1200}
             height={675}
@@ -336,7 +338,7 @@ function CompanySection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/company-01-dashboard.png"
+            src={`${BASE_PATH}/docs/screenshots/company-01-dashboard.png`}
             alt="Company Dashboard"
             width={1200}
             height={675}
@@ -352,7 +354,7 @@ function CompanySection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/company-02-listings.png"
+            src={`${BASE_PATH}/docs/screenshots/company-02-listings.png`}
             alt="Company Listings"
             width={1200}
             height={675}
@@ -368,7 +370,7 @@ function CompanySection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/company-03-orders.png"
+            src={`${BASE_PATH}/docs/screenshots/company-03-orders.png`}
             alt="Company Orders"
             width={1200}
             height={675}
@@ -384,7 +386,7 @@ function CompanySection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/company-04-wallet.png"
+            src={`${BASE_PATH}/docs/screenshots/company-04-wallet.png`}
             alt="Company Wallet"
             width={1200}
             height={675}
@@ -400,7 +402,7 @@ function CompanySection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/company-05-operators.png"
+            src={`${BASE_PATH}/docs/screenshots/company-05-operators.png`}
             alt="Company Operators"
             width={1200}
             height={675}
@@ -429,7 +431,7 @@ function CustomerSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/customer-01-browse.png"
+            src={`${BASE_PATH}/docs/screenshots/customer-01-browse.png`}
             alt="Customer Browse"
             width={1200}
             height={675}
@@ -445,7 +447,7 @@ function CustomerSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/customer-02-orders.png"
+            src={`${BASE_PATH}/docs/screenshots/customer-02-orders.png`}
             alt="Customer Orders"
             width={1200}
             height={675}
@@ -461,7 +463,7 @@ function CustomerSection() {
         </p>
         <div className="rounded-lg overflow-hidden border border-border">
           <Image
-            src="/docs/screenshots/customer-03-wallet.png"
+            src={`${BASE_PATH}/docs/screenshots/customer-03-wallet.png`}
             alt="Customer Wallet"
             width={1200}
             height={675}
